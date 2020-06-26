@@ -1,0 +1,15 @@
+
+vi /etc/network/interfaces
+auto enp0s8
+iface enp0s8 inet static
+address 192.168.56.103
+
+
+
+sudo ufw allow 8080
+sudo ufw allow 22
+sudo ufw status
+sudo ufw allow OpenSSH
+sudo ufw enable
+
+sudo systemctl restart networking.service
